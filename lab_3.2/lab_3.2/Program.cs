@@ -29,9 +29,9 @@ namespace lab_3._2
 
         static void Main(string[] args)
         {
-            //creation of objects
+            //creation of the array of students
 
-            Student[] student = new Student[3];
+            Student[] student = new Student[5];
             int counter = 0;
             int opt = 0;
             do
@@ -140,9 +140,9 @@ namespace lab_3._2
                                 if (student[i].st_data.first_name != null)
                                 {
                                     Console.WriteLine("\n-----------------------------------------------------------------------------------------------------------------------\n");
-                                    Console.WriteLine($"STUDENT {i+1}: {student[i].st_data.first_name} {student[i].st_data.last_name}, {student[i].st_data.per_age} years old.\nStudent ID: {student[i].stud_id}, study at {student[i].college_name}, City: {student[i].city_name}, Address: {student[i].col_address}");
+                                    Console.WriteLine($"STUDENT {i+1}: {student[i].st_data.first_name,-5} {student[i].st_data.last_name,-5}, {student[i].st_data.per_age,5} years old.\nStudent ID: {student[i].stud_id,5}, study at {student[i].college_name,-5}, City: {student[i].city_name,-5}, Address: {student[i].col_address,-5}");
                                 }
-                                Console.WriteLine("\n-----------------------------------------------------------------------------------------------------------------------\n");
+                               
 
                             }
 
