@@ -46,7 +46,7 @@ namespace lab_3
                 {
                     opt = int.Parse(Console.ReadLine());
                     Console.WriteLine("\n-----------------------------------------------------------------------------------------------------------------------\n");
-                    if (opt<0 || opt > 4)
+                    if (opt<1 || opt > 4)
                     {
                         Console.WriteLine("Enter with one of the options numers 1, 2, 3 or 4");
                         goto label0;
