@@ -34,10 +34,11 @@ namespace lab_3._2
             Student[] student = new Student[3];
             int counter = 0;
             int opt = 0;
-            for (int i=0; i<student.Length; i++)
+            do
             { //menu with options
-            
+
             label0:
+                Console.WriteLine("\n---------------------\n"+counter + " students registered");
                 Console.WriteLine("\n-----------------------------------------------------------------------------------------------------------------------\n");
                 Console.WriteLine("Enter with the option\n1) Enter with student information\n2) Display the information\n3) quit the application");
                 Console.WriteLine("\n-----------------------------------------------------------------------------------------------------------------------\n");
@@ -60,27 +61,28 @@ namespace lab_3._2
 
                 switch (opt)
                 {
+                    
                     case 1:
                         {
-                            
-                            
-                                counter++;
+
+                            if (counter < student.Length)
+                            {
                                 Console.WriteLine("Enter with information of student:");
 
                                 Console.Write("First Name: ");
 
-                                student[i].st_data.first_name = Console.ReadLine();
+                                student[counter].st_data.first_name = Console.ReadLine();
 
                                 Console.Write("Last Name: ");
 
-                                student[i].st_data.last_name = Console.ReadLine();
+                                student[counter].st_data.last_name = Console.ReadLine();
 
                             label1:
                                 Console.Write("Age: ");
                                 try
                                 {
-                                    student[i].st_data.per_age = Convert.ToSByte(Console.ReadLine());
-                                    if (student[i].st_data.per_age < 18 || student[i].st_data.per_age > 65)
+                                    student[counter].st_data.per_age = Convert.ToSByte(Console.ReadLine());
+                                    if (student[counter].st_data.per_age < 18 || student[counter].st_data.per_age > 65)
                                     {
                                         Console.WriteLine("Enter with a valid age (between 18 and 65)");
                                         goto label1;
@@ -96,7 +98,7 @@ namespace lab_3._2
                                 Console.Write("Student ID: ");
                                 try
                                 {
-                                    student[i].stud_id = Convert.ToUInt32(Console.ReadLine());
+                                    student[counter].stud_id = Convert.ToUInt32(Console.ReadLine());
 
                                 }
                                 catch (Exception ex4)
@@ -107,36 +109,44 @@ namespace lab_3._2
 
                                 Console.Write("College Name: ");
 
-                                student[i].college_name = Console.ReadLine();
+                                student[counter].college_name = Console.ReadLine();
 
 
                                 Console.Write("City: ");
 
-                                student[i].city_name = Console.ReadLine();
+                                student[counter].city_name = Console.ReadLine();
 
                                 Console.Write("Address: ");
 
-                                student[i].col_address = Console.ReadLine();
+                                student[counter].col_address = Console.ReadLine();
 
-                            
-                            
+                                counter++;
+
+                            }
+                            else
+                            {
+                                Console.WriteLine("Sorry, the number of students are completed");
+
+                            }
+
+
                             break;
                         }
-                    
+
                     case 2:
                         {
-                            for (i = 0; i < student.Length; i++)
+                            for (int i = 0; i < student.Length; i++)
                             {
                                 if (student[i].st_data.first_name != null)
                                 {
                                     Console.WriteLine("\n-----------------------------------------------------------------------------------------------------------------------\n");
-                                    Console.WriteLine($"STUDENT 1: {student[i].st_data.first_name} {student[i].st_data.last_name}, {student[i].st_data.per_age} years old.\nStudent ID: {student[i].stud_id}, study at {student[i].college_name}, City: {student[i].city_name}, Address: {student[i].col_address}");
+                                    Console.WriteLine($"STUDENT {i+1}: {student[i].st_data.first_name} {student[i].st_data.last_name}, {student[i].st_data.per_age} years old.\nStudent ID: {student[i].stud_id}, study at {student[i].college_name}, City: {student[i].city_name}, Address: {student[i].col_address}");
                                 }
                                 Console.WriteLine("\n-----------------------------------------------------------------------------------------------------------------------\n");
 
                             }
-                            
-                            
+
+
                             break;
 
                         }
@@ -147,7 +157,7 @@ namespace lab_3._2
                         }
                 }
 
-            }
+            } while (opt != 3);
 
         }
     }

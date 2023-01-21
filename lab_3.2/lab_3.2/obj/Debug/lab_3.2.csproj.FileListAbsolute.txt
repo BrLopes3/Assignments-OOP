@@ -6,3 +6,11 @@ C:\Users\brlop\source\repos\lab_3.2\lab_3.2\obj\Debug\lab_3.2.csproj.SuggestedBi
 C:\Users\brlop\source\repos\lab_3.2\lab_3.2\obj\Debug\lab_3.2.csproj.CoreCompileInputs.cache
 C:\Users\brlop\source\repos\lab_3.2\lab_3.2\obj\Debug\lab_3.2.exe
 C:\Users\brlop\source\repos\lab_3.2\lab_3.2\obj\Debug\lab_3.2.pdb
+C:\Users\brlop\source\repos\ASSIGNMENTS-OOP\lab_3.2\lab_3.2\bin\Debug\lab_3.2.exe.config
+C:\Users\brlop\source\repos\ASSIGNMENTS-OOP\lab_3.2\lab_3.2\bin\Debug\lab_3.2.exe
+C:\Users\brlop\source\repos\ASSIGNMENTS-OOP\lab_3.2\lab_3.2\bin\Debug\lab_3.2.pdb
+C:\Users\brlop\source\repos\ASSIGNMENTS-OOP\lab_3.2\lab_3.2\obj\Debug\lab_3.2.csproj.AssemblyReference.cache
+C:\Users\brlop\source\repos\ASSIGNMENTS-OOP\lab_3.2\lab_3.2\obj\Debug\lab_3.2.csproj.SuggestedBindingRedirects.cache
+C:\Users\brlop\source\repos\ASSIGNMENTS-OOP\lab_3.2\lab_3.2\obj\Debug\lab_3.2.csproj.CoreCompileInputs.cache
+C:\Users\brlop\source\repos\ASSIGNMENTS-OOP\lab_3.2\lab_3.2\obj\Debug\lab_3.2.exe
+C:\Users\brlop\source\repos\ASSIGNMENTS-OOP\lab_3.2\lab_3.2\obj\Debug\lab_3.2.pdb
